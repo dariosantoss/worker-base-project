@@ -1,0 +1,70 @@
+{
+    "users": [
+        {
+            "name": "admin",
+            "password": "admin",
+            "tags": "administrator"
+        }
+    ],
+    "vhosts": [
+        {
+            "name": "/"
+        },
+        {
+            "name": "my_vhost"
+        }
+    ],
+    "permissions": [
+        {
+            "user": "admin",
+            "vhost": "/",
+            "configure": ".*",
+            "read": ".*",
+            "write": ".*"
+        },
+        {
+            "user": "admin",
+            "vhost": "my_vhost",
+            "configure": ".*",
+            "read": ".*",
+            "write": ".*"
+        }
+    ],
+    "queues": [
+        {
+            "name": "development-fila-processar-audio-estudante",
+            "vhost": "my_vhost",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        },
+        {
+            "name": "development-fila-processar-documento-estudante",
+            "vhost": "my_vhost",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        },
+        {
+            "name": "development-fila-processar-texto-estudante",
+            "vhost": "my_vhost",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        },
+        {
+            "name": "development-fila-processar-imagem-estudante",
+            "vhost": "my_vhost",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        },
+        {
+            "name": "development-fila-processar-video-estudante",
+            "vhost": "my_vhost",
+            "durable": true,
+            "auto_delete": false,
+            "arguments": {}
+        }
+    ]
+}
